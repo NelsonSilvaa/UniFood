@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/style-carteira.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="./css/style-pedido.css">
+    <title>Pedidos</title>
 </head>
 <body>
 <!-- INICIO HEADER -->
@@ -26,82 +26,53 @@
 <!-- FIM HEADER -->
 
         <div class="title-comida">
-            <h1> Carteira </h1>
+            <h1> Pedidos </h1>
         </div>
 
 <!-- PEDIDOS DE SALGADOS -->
-<div class="container-carteira">
-    <div class="saldo">
-        <h1>Saldo: R$0,00</h1>
+<div class="container-pedido">
+    <div class="parent">
+        <div class="div1">Nome</div>
+        <div class="div2">Qtde</div>
+        <div class="div3">Total</div>
+        <div class="div4">Coca-cola</div>
+        <div class="div5">x1</div>
+        <div class="div6">R$0,00</div>
+        <div class="div7">Coxinha</div>
+        <div class="div8">x1</div>
+        <div class="div9">R$0,00</div>
+        <div class="div10">Bala</div>
+        <div class="div11">x10</div>
+        <div class="div12">R$0,00</div>
     </div>
     <hr>
-    <div class="cartoes">
-        <div class="title-cartoes">
-            <h1>Cartões cadastrados</h1>
-        </div>
-        <!-- ///////////////////////////////// CSS GRID///////////////////////////////////////////// -->
-        <div class="center-grid">
-            <div id="grid-card">
-                <div class="div1">
-                    <img src="./imagens/cartao.png" width="50px">
-                </div>
-                <div class="div2">
-                    <p>VISA</p>
-                </div>
-                <div class="div3">
-                    <p>**** **** **** 0000</p>
-                </div>
-                <div class="div4">
-                    <img src="./imagens/lixeira.png" width="40px">
-                </div>
-                <div class="div5">
-                    <img src="./imagens/cartao.png" width="50px">
-                </div>
-                <div class="div6">
-                    <p>MASTERCARD</p>
-                </div>
-                <div class="div7">
-                    <p>**** **** **** 1111</p>
-                </div>
-                <div class="div8">
-                    <img src="./imagens/lixeira.png" width="40px">
-                </div>
-            </div>
-        </div>
-        <!-- <div class="cartoes-flex01">
-            <div class="card1">
-                <div class="logo-card">
-                    <img src="./imagens/cartao.png" width="50px">
-                </div>
-                <div class="bandeira-card">
-                    <p>VISA</p>
-                </div>
-                <div class="numero-card">
-                    **** **** **** 0000
-                </div>
-                <div class="lixeira-card">
-                    <img src="./imagens/lixeira.png" width="40px">
-                </div>
-            </div>
-            <hr>
-            <div class="card2">
-                <div class="logo-card">
-                    <img src="./imagens/cartao.png" width="50px">
-                </div>
-                <div class="bandeira-card">
-                    <p>MASTERCARD</p>
-                </div>
-                <div class="numero-card">
-                    **** **** **** 1111
-                </div>
-                <div class="lixeira-card">
-                    <img src="./imagens/lixeira.png" width="40px">
-                </div>
-            </div>
-        </div> -->
+    <div class="parent02">
+        <div class="div01">Formas de pagamento</div>
+
+        <div class="div02"> <img src="./imagens/cartao.png" height="40px"> </div>
+        <div class="div03"> VISA </div>
+        <div class="div04"> **** **** **** 0000</div>
+        <div class="div05"><input type="checkbox"></div>
+
+        <div class="div06"><img src="./imagens/cartao.png" height="40px"></div>
+        <div class="div07"> VISA </div>
+        <div class="div08"> **** **** **** 1111</div>
+        <div class="div09"> <input type="checkbox"> </div>
+        
+        <div class="div010"> <img src="./imagens/key.png" height="40px"> </div>
+        <div class="div011"> Pagar com chave PIX </div>
+        <div class="div012"> <input type="checkbox"> </div>
+
+        <div class="div013"> <img src="./imagens/registradora.png" height="40px"> </div>
+        <div class="div014"> Pagar na retirada </div>
+        <div class="div015"> <input type="checkbox"> </div>
     </div>
     <hr>
-    <span><h2>Adicionar cartão</h2></span>
+    <div class="preco-final">
+        <p><h1>Valor da compra</h1></p>
+        <p><h2>R$0,00</h2></p>
+        <p><h3>Pagar</h3></p>
+    </div>
 </div>
 
 
@@ -109,19 +80,19 @@
 <!-- RODAPÉ -->
 
 <footer>
-        <nav class="nav-footer">
-            <ul>
-                <li>
-                    <img src="./imagens/carteira.png">    
-                </li>
-                <li>
-                    <img src="./imagens/home.png">     
-                </li>
-                <li>
-                    <img src="./imagens/pedido.png">       
-                </li>
-            </ul>
-        </nav>
+    <nav class="nav-footer">
+        <ul>
+            <li>
+                <a href="carteira.html"> <img src="./imagens/carteira.png"> </a>    
+            </li>
+            <li>
+                <a href="index.html"> <img src="./imagens/home.png"> </a>    
+            </li>
+            <li>
+                <a href="pedidos.html"> <img src="./imagens/pedido.png"> </a>       
+            </li>
+        </ul>
+    </nav>
 </footer>
 </body>
 </html>
