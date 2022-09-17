@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -75,6 +77,9 @@ section{
 /*/////////////////// FIM TELA DE LOGIN /////////////////////*/
 
 /*/////////////////// INICIO TELA HOME /////////////////////*/
+body{
+    background-color: #878786;
+}
 
 header{
     padding: 10px;
@@ -94,32 +99,36 @@ header img{
 }
 
 .title-comida{
+    font-family: 'Ramabhadra', sans-serif;
+    color: #ffffff;
+    text-shadow: 5px 5px #000000;
     margin: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     font-size: 35px;
 }
 
 .container-home{
-    border: 2px solid green;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 5px 1px rgb(3, 68, 207), 0 10px 15px 10px rgb(0, 0, 0);
 }
 
 .salgados{
-    margin: 8px;
+    margin: 30px;
     padding: 10px;
     display: flex;
     align-items: center;
-    /* border: 2px solid black; */
     border-radius: 20px;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 10px 25px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid black;
 }
 
 .titulo-salgado{
@@ -158,15 +167,50 @@ header img{
 }
 
 .img-salgado{
-    object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+.center-carrinho{
+    display: flex;
+    justify-content: center;
+}
+
+.container-carrinho{
+    margin-top: 100px;
+    padding-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0 3px 2px 2px rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.div1{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.ct-carrinho{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+/*/////////////////////////////INICIO FOOTER///////////////////////////////////////*/
 footer{
-    position: fixed;
+    margin-top: 80px;
     bottom: 0;
     width: 100%;
     background-color: #20659F;
