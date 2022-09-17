@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body { 
+    font-family: Arial, Helvetica, sans-serif; 
+} 
+
+/*/////////////////// TELA DE LOGIN /////////////////////*/
+
+section{
+    min-height: 100vh;
+    max-height: auto;
+    background-image: url("./imagens/unicesumarbackground.png");
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.container{
+    max-width: 1000px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 3px 5px 21px 10px rgb(36, 48, 59), 8px 21px 30px 20px rgb(71, 66, 66);
+}
+
+.box-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 0 20px;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.box-login{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    width: 80%;
+    /* border: 3px solid red; */
+}
+
+.box-login input{
+    font-size: 25px;
+    height: 40px;
+    width: 115%;
+}
+
+
+.entrar-login{
+    margin-top: 32%; 
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+}
+
+.entrar-login a{
+    height: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(14, 96, 204);
+    text-decoration: none;
+    color: #000000;
+}
+
+.entrar-login a:hover{
+    background-color: #6c757a;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+/*/////////////////// FIM TELA DE LOGIN /////////////////////*/
+
+/*/////////////////// INICIO TELA HOME /////////////////////*/
+body{
+    background-color: #878786;
+}
+
+header{
+    padding: 10px;
+    background-color: #20659F;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+header img{
+    padding-left: 20px;
+    width: 70px;
+    width: 70px;
+}
+
+.title-comida{
+    font-family: 'Ramabhadra', sans-serif;
+    color: #ffffff;
+    text-shadow: 5px 5px #000000;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 35px;
+}
+
+.container-home{
+    max-width: 70%;
+    min-width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 1px rgb(3, 68, 207), 0 10px 15px 10px rgb(0, 0, 0);
+}
+
+.salgados{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid black;
+}
+
+.titulo-salgado{
+    /* display: flex;
+    flex-direction: column; */
+    margin: 5px 0 0 10px;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-salgado{
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 20px;
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: 21px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.preco-compra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.comprar-categorias{
+    margin-top: 30px;
+    margin-right: 20px;
+    padding: 20px;
+    float: right;
+}
+
+.comprar-categorias a{
+    text-decoration: none;
+    background-color: #20659F;
+    padding: 12px;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.comprar-categorias a:hover{
+    background-color: #6c757a;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.img-salgado{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-carrinho{
+    display: flex;
+    justify-content: center;
+}
+
+.container-carrinho{
+    margin-top: 100px;
+    padding-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 0 3px 2px 2px rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.div1{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.ct-carrinho{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/*/////////////////////////////INICIO FOOTER///////////////////////////////////////*/
+footer{
+    margin-top: 80px;
+    bottom: 0;
+    width: 100%;
+    background-color: #20659F;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+footer img{
+    width: 60px;
+    height: 60px;
+}

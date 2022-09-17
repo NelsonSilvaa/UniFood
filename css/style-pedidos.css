@@ -14,10 +14,13 @@ html, body {
 section{
     min-height: 100vh;
     max-height: auto;
-    background-color: aquamarine;
+    background-image: url("./imagens/unicesumarbackground.png");
+    background-repeat: repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 25px;
 }
 
 .container{
@@ -27,6 +30,8 @@ section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
+    box-shadow: 3px 5px 21px 10px rgb(36, 48, 59), 8px 21px 30px 20px rgb(71, 66, 66);
 }
 
 .box-title{
@@ -47,7 +52,7 @@ section{
     justify-content: center;
     align-items: center;
     margin: 30px;
-    padding: 50px;
+    padding: 30px;
     width: 80%;
     /* border: 3px solid red; */
 }
@@ -60,18 +65,25 @@ section{
 
 
 .entrar-login{
-    margin-top: 32%;
-    padding: 5%;
-    background-color: rgb(14, 96, 204);
+    margin-top: 32%; 
     cursor: pointer;
     font-size: 25px;
-    border-radius: 8px;
     border: none;
 }
 
 .entrar-login a{
+    height: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(14, 96, 204);
     text-decoration: none;
+    color: #000000;
+}
+
+.entrar-login a:hover{
+    background-color: #6c757a;
     color: #ffffff;
+    transition: 0.5s;
 }
 
 /*/////////////////// FIM TELA DE LOGIN /////////////////////*/
@@ -84,20 +96,60 @@ body{
 header{
     padding: 10px;
     background-color: #20659F;
-    display: flex;
-    justify-content: end;
-    align-items: center;
     color: #ffffff;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-header img{
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.voltar{
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.voltar:hover{
+    transform: scale(1.3);
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.aluno-logo{
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.aluno-logo:hover{
+    transform: scale(1.3);
+    background-color: #ffffff;
+}
+
+.wrap-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .nav-header img{
     padding-left: 20px;
     width: 70px;
     width: 70px;
-}
+    right: 0;
+} */
 
+
+header nav{
+    display: flex;
+}
 .title-comida{
     font-family: 'Ramabhadra', sans-serif;
     color: #ffffff;
@@ -111,11 +163,12 @@ header img{
 }
 
 .container-home{
-    width: 60%;
+    max-width: 65%;
+    min-width: auto;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    /* border: 2px solid black; */
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 5px 5px 1px rgb(3, 68, 207), 0 10px 15px 10px rgb(0, 0, 0);
@@ -125,6 +178,8 @@ header img{
     margin: 30px;
     padding: 10px;
     display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
     align-items: center;
     border-radius: 20px;
     box-shadow: 0 10px 25px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -132,23 +187,48 @@ header img{
 }
 
 .titulo-salgado{
+    max-width: 33rem;
+    width: 33rem; 
+    min-width: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 5px 0 0 10px;
-    font-size: 25px;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* border: 2px solid purple; */
 }
 
 .text-salgado{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 20px;
     padding: 15px;
     margin-bottom: 0;
     font-size: 21px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 2px solid blue; */
+}
+
+.preco-compra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    /* border: 2px solid red; */
+}
+
+.preco-compra h1{
+    float: left;
 }
 
 .comprar-categorias{
-    margin-top: 30px;
+    /* margin-top: 30px;
     margin-right: 20px;
-    padding: 20px;
+    padding: 20px; */
     float: right;
 }
 
@@ -167,11 +247,12 @@ header img{
 }
 
 .img-salgado{
+    margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
+
 
 .center-carrinho{
     display: flex;
@@ -203,9 +284,6 @@ header img{
     align-items: center;
     justify-content: space-around;
 }
-
-
-
 
 
 /*/////////////////////////////INICIO FOOTER///////////////////////////////////////*/
