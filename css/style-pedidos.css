@@ -251,8 +251,14 @@ header nav{
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+    transition: transform .3s;
 }
 
+.img-salgado:hover{
+    transform: scale(1.2);
+    background-color: #ffffff;
+    transition: 0.5s;
+}
 
 .center-carrinho{
     display: flex;
