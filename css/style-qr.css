@@ -156,7 +156,7 @@ header nav{
 }
 
 .container-pedido{
-    max-width: 60%;
+    max-width: 45%;
     min-width: auto;
     margin: 0 auto;
     display: flex;
@@ -167,158 +167,38 @@ header nav{
     box-shadow: 0 5px 5px 1px rgb(3, 68, 207), 0 10px 15px 10px rgb(0, 0, 0);
 }
 
-.parent{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 100px;
-    grid-row-gap: 20px;
-    align-self: center;
-    justify-self: center;
-
+.img-qrcode{
+    text-align: center;
 }
 
-.div1, .div2, .div3{
-    margin: 10px;
-    font-size: 40px;
-}
-
-.div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12{
-    font-size: 25px;
-}
-
-.div1 { 
-    grid-area: 1 / 1 / 2 / 2; 
-    align-self: center;
-    justify-self: center;
-}
-.div2 { 
-    grid-area: 1 / 2 / 2 / 3; 
-    align-self: center;
-    justify-self: center;
-}
-.div3 { 
-    grid-area: 1 / 3 / 2 / 4; 
-    align-self: center;
-    justify-self: center;
-}
-.div4 { 
-    grid-area: 2 / 1 / 3 / 2;
-    align-self: center;
-    justify-self: center; 
-
-}
-.div5 { 
-    grid-area: 2 / 2 / 3 / 3;
-    align-self: center;
-    justify-self: center; 
-}
-.div6 { 
-    grid-area: 2 / 3 / 3 / 4;
-    align-self: center;
-    justify-self: center; 
-}
-.div7 { 
-    grid-area: 3 / 1 / 4 / 2;
-    align-self: center;
-    justify-self: center; 
-}
-.div8 { 
-    grid-area: 3 / 2 / 4 / 3;
-    align-self: center;
-    justify-self: center; 
-}
-.div9 { 
-    grid-area: 3 / 3 / 4 / 4;
-    align-self: center;
-    justify-self: center; 
-}
-.div10 { 
-    grid-area: 4 / 1 / 5 / 2;
-    align-self: center;
-    justify-self: center; 
-}
-.div11 { 
-    grid-area: 4 / 2 / 5 / 3;
-    align-self: center;
-    justify-self: center; 
-}
-.div12 { 
-    grid-area: 4 / 3 / 5 / 4;
-    align-self: center;
-    justify-self: center; 
-}
-
-
-.parent02 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: px;
-    grid-row-gap: 0px;
-    }
-    
-    .div01 { grid-area: 1 / 1 / 2 / 5; align-self:center; justify-self: center; }
-    .div02 { grid-area: 2 / 1 / 3 / 2; align-self:center; justify-self: end; }
-    .div03 { grid-area: 2 / 2 / 3 / 3; align-self:center; justify-self: center; }
-    .div04 { grid-area: 2 / 3 / 3 / 4; align-self:center; justify-self: center; }
-    .div05 { grid-area: 2 / 4 / 3 / 5; align-self:center; justify-self: center; }
-    .div06 { grid-area: 3 / 1 / 4 / 2; align-self:center; justify-self: end; }
-    .div07 { grid-area: 3 / 2 / 4 / 3; align-self:center; justify-self: center; }
-    .div08 { grid-area: 3 / 3 / 4 / 4; align-self:center; justify-self: center; }
-    .div09 { grid-area: 3 / 4 / 4 / 5; align-self:center; justify-self: center; }
-    .div010 { grid-area: 4 / 1 / 5 / 2;align-self:center; justify-self: end;}
-    .div011 { grid-area: 4 / 2 / 5 / 4;align-self:center; justify-self: center;}
-    .div012 { grid-area: 4 / 4 / 5 / 5;align-self:center; justify-self: center;}
-    .div013 { grid-area: 5 / 1 / 6 / 2;align-self:center; justify-self: end;}
-    .div014 { grid-area: 5 / 2 / 6 / 4;align-self:center; justify-self: center;}
-    .div015 { grid-area: 5 / 4 / 6 / 5;align-self:center; justify-self: center;}
-
-.div01{
-    font-size: 40px;
-}
-
-.div02, .div03 ,.div04 ,.div05 ,.div06 ,.div07 ,.div08 ,.div09 ,.div010,.div011,.div012,.div013,.div014,.div015{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.preco-final{
-    margin: 10px;
+.numero-qr-code h2{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    border: 2px solid black;
 }
 
-.preco-final h1{
-    margin: 30px 0 30px 0;
-    font-size: 40px;
-}
-
-.preco-final h2{
-    margin: 30px 0 30px 0;
-    font-size: 50px;
-}
-
-.preco-final h3{
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 30px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.preco-final a{
-    text-decoration: none;
-}
-
-.preco-final h3:hover{
-    transition: 0.5s;
-    background-color: rgb(0, 73, 6);
+.numero-qr-code h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #20659F;
     color: #ffffff;
+    cursor: pointer;
 }
+
+.numero-qr-code h3:hover{
+    color: #000000;
+    background-color: #80806f52;
+    transition: 0.5s;
+}
+
 /*/////////////////////////////INICIO FOOTER///////////////////////////////////////*/
 footer{
     margin-top: 80px;
