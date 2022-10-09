@@ -163,7 +163,7 @@ header nav{
 }
 
 .container-home{
-    max-width: 65%;
+    max-width: 80%;
     min-width: auto;
     margin: 0 auto;
     display: flex;
@@ -222,7 +222,7 @@ header nav{
 }
 
 .preco-compra h1{
-    float: left;
+    /* float: left; */
 }
 
 .comprar-categorias{
@@ -248,8 +248,8 @@ header nav{
 
 .img-salgado{
     margin: auto;
-    display: flex;
-    align-items: flex-end;
+    /* display: flex; */
+    /* align-items: flex-end; */
     justify-content: flex-start;
     transition: transform .3s;
 }
