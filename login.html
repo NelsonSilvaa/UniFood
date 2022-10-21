@@ -14,17 +14,18 @@
                 <h1>LOGIN</h1>
                 <div class="box-login">
                         <h2>RA ou e-mail:</h2>
-                        <input type="text">
+                        <input type="text" id='email' placeholder="Digite seu RA ou email">
                         <br>
                         <h2>Senha:</h2>
-                        <input type="password">
+                        <input type="password" id='passwd' placeholder="Digite sua senha">
                         <div class="button">
-                            <button class="entrar-login"><a href="index.html">Entrar</a></button>
+                            <button onclick="validaLogin()" class="entrar-login" id="login"><a href="index.html">Entrar</a></button>
                         </div>
                         
                 </div>
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
