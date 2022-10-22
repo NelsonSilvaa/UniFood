@@ -171,6 +171,13 @@ header nav{
     text-align: center;
 }
 
+.numero-qr-code{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .numero-qr-code h2{
     display: flex;
     justify-content: center;
@@ -180,7 +187,7 @@ header nav{
     border: 2px solid black;
 }
 
-.numero-qr-code h3{
+.numero-qr-code button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,14 +198,20 @@ header nav{
     background-color: #20659F;
     color: #ffffff;
     cursor: pointer;
+    border: none;
+    font-size: 18px;
 }
 
-.numero-qr-code h3:hover{
+.numero-qr-code button:hover{
     color: #000000;
     background-color: #80806f52;
     transition: 0.5s;
 }
 
+#copiarQR{
+    margin: 0 auto;
+    font-size: 20px;
+}
 /*/////////////////////////////INICIO FOOTER///////////////////////////////////////*/
 footer{
     margin-top: 80px;
