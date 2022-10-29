@@ -11,6 +11,18 @@ html, body {
 
 /*/////////////////// TELA DE LOGIN /////////////////////*/
 
+.login2{
+    min-height: 100vh;
+    max-height: auto;
+    background-image: url("../imagens/unicesumar-bg.png ");
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
 section{
     min-height: 100vh;
     max-height: auto;
@@ -21,6 +33,17 @@ section{
     align-items: center;
     justify-content: center;
     font-size: 25px;
+}
+
+.container2{
+    max-width: 1000px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 3px 5px 20px 10px rgb(0, 0, 0), 8px 2px 30px 2px rgb(71, 66, 66);
 }
 
 .container{
@@ -63,8 +86,27 @@ section{
     width: 115%;
 }
 
+.button{
+    padding: 20px 0;
+    width: 115%;
+}
 
-.entrar-login{
+
+.button button{
+    width: 100%;
+    height: 36px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.button button:hover{
+    color: whitesmoke;
+    background-color: #20659F;
+    transition: .6s;
+}
+
+/* .entrar-login{
+    width: 100%;
     margin-top: 32%; 
     cursor: pointer;
     font-size: 25px;
@@ -72,7 +114,6 @@ section{
 }
 
 .entrar-login a{
-    height: 200px;
     border-radius: 8px;
     padding: 10px;
     background-color: rgb(14, 96, 204);
@@ -86,6 +127,29 @@ section{
     transition: 0.5s;
 }
 
+.button{
+    width: 100%;
+    border: 2px solid red;
+} */
+
+.funcionario{
+    width: 115%;
+    display: flex;
+    justify-content: end;
+    font-size: 18px;
+    right: 100;
+}
+
+.funcionario a{
+    text-decoration: none;
+    color: #000000;
+    text-decoration:underline
+}
+
+.funcionario a:hover{
+    color: #3198ec;
+    transition: .6s;
+}
 /*/////////////////// FIM TELA DE LOGIN /////////////////////*/
 
 /*/////////////////// INICIO TELA HOME /////////////////////*/
