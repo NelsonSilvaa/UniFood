@@ -54,7 +54,7 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    box-shadow: 3px 5px 21px 10px rgb(36, 48, 59), 8px 21px 30px 20px rgb(71, 66, 66);
+    box-shadow: 3px 5px 20px 10px rgb(0, 0, 0), 8px 2px 30px 2px rgb(71, 66, 66);
 }
 
 .box-title{
