@@ -17,13 +17,13 @@ function validaLogin() {
 
 
 function validaLogin2() {
-    let grupoEmail = ["mariasilva@unicesumar.edu.br"]; // Email e senhas válidos para acesso
+    let grupoEmail = ["mariasilva@unicesumar.edu.br"]; 
     let grupoSenha = ["UniC987"];
-    let email = document.getElementById('email').value; // coleta email digitado no input
-    let senha = document.getElementById('passwd').value; // coleta senha digitada no input
+    let email = document.getElementById('email').value; 
+    let senha = document.getElementById('passwd').value; 
     // verifica se login e senha estão no array
-    if(email == grupoEmail[0] || email == grupoEmail[1] && senha == grupoSenha[0]){
-        window.location = "index.html";// caso seja verdadeiro, vai para a próxima página
+    if(email == grupoEmail[0] && senha == grupoSenha[0]){
+        window.location = "area-funcionario.html";
     }else{
         document.querySelector('.msg-erro').style.display = 'flex';
         setInterval(function () {
